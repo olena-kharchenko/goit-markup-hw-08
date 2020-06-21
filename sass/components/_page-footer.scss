@@ -1,0 +1,145 @@
+/* Footer */
+.page-footer {
+    padding-top: 48px;
+    padding-bottom: 21px;
+
+    background-color: $bg-footer-color;
+
+    .icon-social {
+        background-color: rgba(255, 255, 255, 0.1);
+        fill: #ffffff;
+
+        transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+        &:hover,
+        &:focus {
+            background-color: $accent-color;
+        }
+
+    }
+
+    .item:not(:last-child) {
+        margin-right: 10px;
+    }
+}
+
+.flex-footer {
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+    padding-bottom: 28px;
+
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.address-nav {
+    display: flex;
+    flex-direction: column;
+
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.71;
+
+    .link {
+        color: $primary-white-color;
+        text-decoration: none;
+    }
+
+    .item {
+        display: inline-block;
+        margin-bottom: 9px;
+
+        &:last-child {
+            margin-bottom: 0px;
+        }
+    }
+
+    .transparent {
+        color: $secondary-white-color;
+        text-decoration: none;
+    }
+}
+
+.social .link,
+.page-footer .form-field label {
+
+    margin-bottom: 21px;
+
+    color: $primary-white-color;
+
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    text-transform: uppercase;
+}
+
+.button.subscription {
+
+    margin-left: 12px;
+    border: 0;
+    height: 50px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    font-family: inherit;
+    font-weight: 900;
+    font-size: 16px;
+    line-height: 1.87;
+    letter-spacing: 0.06em;
+
+}
+
+.subscribe-icon {
+    display: flex;
+    align-items: center;
+
+    fill: #ffffff;
+}
+
+.subscribe p {
+    margin-right: 10px;
+}
+
+/* Разметка формы в футере */
+
+.form-field {
+    display: flex;
+    flex-direction: column;
+
+    input {
+        margin: 0;
+        padding: 0;
+        width: 358px;
+        height: 50px;
+        padding: 18px 12px;
+
+        color: rgba(255, 255, 255, 0.6);
+        border: 1px solid rgba(255, 255, 255, 0.3);
+        background-color: $bg-footer-color;
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+        border-radius: 4px;
+    }
+
+    input::placeholder {
+        font-size: 16px;
+        color: rgba(255, 255, 255, 0.6);
+    }
+
+    .icon-send {
+        margin-left: 10px;
+    }
+}
+
+.flex-email {
+    display: flex;
+}
+
+.author {
+    margin-top: 18px;
+
+    color: $author-color;
+
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 2;
+    text-align: center;
+}

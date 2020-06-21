@@ -1,0 +1,37 @@
+.flex-apps {
+    display: flex;
+
+    .item {
+        width: 380px;
+
+        &:not(:last-child) {
+            margin-right: 30px;
+        }
+    }
+}
+
+.img-wrap {
+    position: relative;
+
+    h3 {
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        width: 100%;
+    }
+}
+
+.subtitle {
+    padding-top: 27px;
+    padding-bottom: 27px;
+
+    color: $primary-white-color;
+    background-color: $bg-subtitle-color;
+    border-radius: 0px 0px 4px 4px;
+
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    text-align: center;
+    text-transform: uppercase;
+}
