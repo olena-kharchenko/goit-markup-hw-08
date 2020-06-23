@@ -1,19 +1,19 @@
 // Общие стили
 
 
-// body {
-//     background-color: $primary-white-color;
-//     color: $primary-text-color;
+body {
+    background-color: $primary-white-color;
+    color: $primary-text-color;
 
-//     font-family: $main-font;
-//     letter-spacing: 0.03em;
-// }
+    font-family: $main-font;
+    letter-spacing: 0.03em;
+}
 
-// img {
-//     display: block;
-//     max-width: 100%;
-//     height: auto;
-// }
+img {
+    display: block;
+    // max-width: 100%;
+    // height: auto;
+}
 
 .container {
     margin-left: auto;
@@ -71,6 +71,21 @@ button {
 .section {
     padding-top: 60px;
     padding-bottom: 60px;
+
+    .title {
+        color: $title-text-color;
+    }
+
+}
+
+/* Заголовки */
+.title.big {
+    font-weight: 700;
+    font-size: 28px;
+    line-height: 1.17;
+    text-align: center;
+
+    margin-bottom: 30px;
 }
 
 // .section {
@@ -96,15 +111,4 @@ button {
 //             margin: 0 auto;
 //         }
 //     }
-// }
-
-// /* Заголовки */
-// .title.big {
-//     font-weight: 700;
-//     font-size: 36px;
-//     line-height: 1.17;
-//     text-align: center;
-//     letter-spacing: 0.03em;
-
-//     margin-bottom: 50px;
 // }

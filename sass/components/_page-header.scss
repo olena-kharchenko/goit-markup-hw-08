@@ -1,10 +1,12 @@
-.header-studio {
+.header-studio,
+.header-portfolio {
     position: relative;
 
     border-bottom: 1px solid #ECECEC;
 }
 
-.header-studio .flex-nav {
+.header-studio .flex-nav,
+.header-portfolio .flex-nav {
     display: flex;
     align-items: center;
     justify-content: space-between;

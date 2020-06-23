@@ -1,5 +1,42 @@
 // /* Постоянные клиенты*/
 
+.flex-company {
+    display: flex;
+    flex-wrap: wrap;
+    margin: -15px;
+
+    .item {
+        width: calc((100% - 4*15px) / 2);
+        margin: 15px;
+        // &:not(:last-child) {
+        //     margin-right: 30px;
+        // }
+
+    }
+}
+
+
+.company-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    height: 90px;
+    border: 1px solid #afb1b8;
+    border-radius: 4px;
+    fill: #afb1b8;
+
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+        fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    &:hover,
+    &:focus {
+        border-color: $accent-color;
+        fill: $accent-color;
+    }
+}
+
+
 // .flex-company {
 //     display: flex;
 

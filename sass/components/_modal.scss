@@ -1,227 +1,227 @@
 // /* Модальное окно */
 
-// .backdrop {
-//     position: fixed;
-//     top: 0;
-//     left: 0;
-//     z-index: 10;
-//     width: 100%;
-//     height: 100%;
-//     background-color: rgba(0, 0, 0, 0.2);
-//     transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
+.backdrop {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 10;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.2);
+    transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
-//     &.is-hidden {
-//         opacity: 0;
-//         pointer-events: none;
-//     }
-// }
+    &.is-hidden {
+        opacity: 0;
+        pointer-events: none;
+    }
+}
 
-// .modal {
-//     position: absolute;
+.modal {
+    position: absolute;
 
-//     top: 50%;
-//     left: 50%;
-//     transform: translate(-50%, -50%);
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 
-//     min-height: 580px;
-//     min-width: 528px;
-//     padding: 40px;
+    // min-height: 580px;
+    width: 450px;
+    padding: 40px;
 
-//     background-color: $primary-white-color;
-//     box-shadow: 0px 2px 1px rgba(0, 0, 0, 0.2),
-//         0px 1px 1px rgba(0, 0, 0, 0.14),
-//         0px 1px 3px rgba(0, 0, 0, 0.12);
-//     border-radius: 4px;
+    background-color: $primary-white-color;
+    box-shadow: 0px 2px 1px rgba(0, 0, 0, 0.2),
+        0px 1px 1px rgba(0, 0, 0, 0.14),
+        0px 1px 3px rgba(0, 0, 0, 0.12);
+    border-radius: 4px;
 
-//     &-title {
+    &-title {
 
-//         font-weight: 700;
-//         font-size: 20px;
-//         line-height: 1.15;
-//         text-align: center;
-//         letter-spacing: 0.03em;
+        font-weight: 700;
+        font-size: 20px;
+        line-height: 1.15;
+        text-align: center;
+        letter-spacing: 0.03em;
 
-//         color: $title-text-color;
-//     }
-// }
-
-
-// .close-modal {
-//     position: absolute;
-//     top: 0;
-//     right: 0;
-//     transform: translate(30%, -30%);
-
-//     border-radius: 50%;
-//     width: 30px;
-//     height: 30px;
-//     background-color: $primary-white-color;
-//     box-shadow: 0px 2px 1px rgba(0, 0, 0, 0.2),
-//         0px 1px 1px rgba(0, 0, 0, 0.14),
-//         0px 1px 3px rgba(0, 0, 0, 0.12);
-// }
+        color: $title-text-color;
+    }
+}
 
 
-// .form {
-//     margin-top: 30px;
-
-//     &-field {
-//         position: relative;
-//         margin-bottom: 28px;
-
-//         transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
-
-//         input {
-//             /* position: relative; */
-//             width: 100%;
-//             height: 40px;
-//             padding: 12px 16px;
-//             padding-left: 42px;
-//             /* margin-bottom: 28px; */
-//             border: 1px solid rgba(33, 33, 33, 0.2);
-//             border-radius: 4px;
-//             outline: none;
-
-//             transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-//         }
-
-//         .form-label {
-//             position: absolute;
-//             left: 42px;
-//             top: 50%;
-//             transform: translateY(-50%);
-
-//             z-index: 3;
-//             font-weight: 400;
-//             font-size: 14px;
-//             line-height: 1.14;
-//             letter-spacing: 0.01em;
-//             color: $primary-text-color;
-
-//             transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
-//         }
-
-//         textarea {
-//             position: relative;
-//             resize: none;
-//             width: 100%;
-//             min-height: 120px;
-//             padding: 12px 16px;
+.close-modal {
+    position: absolute;
+    top: 8px;
+    right: 8px;
 
 
-//             border: 1px solid rgba(33, 33, 33, 0.2);
-//             border-radius: 4px;
-//             outline: none;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    background-color: $primary-white-color;
+    box-shadow: 0px 2px 1px rgba(0, 0, 0, 0.2),
+        0px 1px 1px rgba(0, 0, 0, 0.14),
+        0px 1px 3px rgba(0, 0, 0, 0.12);
+}
 
-//             transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-//         }
 
-//         .form-label-comment {
-//             position: absolute;
-//             left: 16px;
-//             top: 12px;
-//             font-size: 14px;
+.form {
+    margin-top: 30px;
 
-//             transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
-//         }
+    &-field {
+        position: relative;
+        margin-bottom: 28px;
 
-//         .icon-form {
-//             position: absolute;
-//             left: 16px;
-//             top: 50%;
-//             transform: translateY(-50%);
+        transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
-//             display: inline-block;
-//             margin-right: 8px;
-//             /* outline: 1px solid black; */
-//             fill: $title-text-color;
+        input {
+            // position: relative;
+            width: 100%;
+            height: 40px;
+            padding: 12px 16px;
+            padding-left: 42px;
+            /* margin-bottom: 28px; */
+            border: 1px solid rgba(33, 33, 33, 0.2);
+            border-radius: 4px;
+            outline: none;
+            color: fff;
+            transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+        }
 
-//             transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
-//         }
-//     }
-// }
+        .form-label {
+            position: absolute;
+            left: 42px;
+            top: 50%;
+            transform: translateY(-50%);
 
-// .form-field:focus-within>.icon-form {
-//     fill: $accent-color;
-// }
+            z-index: 3;
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 1.14;
+            letter-spacing: 0.01em;
+            color: $primary-text-color;
 
-// .form-field:focus-within>input,
-// .form-field:focus-within>textarea {
-//     border-color: $accent-color;
+            transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+        }
 
-// }
+        textarea {
+            position: relative;
+            resize: none;
+            width: 100%;
+            min-height: 120px;
+            padding: 12px 16px;
 
-// .form-field:focus-within>.form-label,
-// .form-input:not(:placeholder-shown)+.form-label {
-//     transform: translate(-26px, -36px);
 
-//     font-size: 12px;
-//     color: $accent-color;
-// }
+            border: 1px solid rgba(33, 33, 33, 0.2);
+            border-radius: 4px;
+            outline: none;
 
-// .form-field:focus-within>.form-label-comment,
-// textarea:not(:placeholder-shown)+.form-label-comment {
-//     transform: translateY(-28px);
+            transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+        }
 
-//     font-size: 12px;
-//     color: $accent-color;
-// }
+        .form-label-comment {
+            position: absolute;
+            left: 16px;
+            top: 12px;
+            font-size: 14px;
 
-// .field {
-//     display: flex;
-//     align-items: center;
-// }
+            transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+        }
 
-// .form-license {
+        .icon-form {
+            position: absolute;
+            left: 16px;
+            top: 50%;
+            transform: translateY(-50%);
 
-//     display: flex;
-//     justify-content: center;
-//     margin-bottom: 30px;
+            display: inline-block;
+            margin-right: 8px;
+            /* outline: 1px solid black; */
+            fill: $title-text-color;
 
-//     label {
-//         font-size: 14px;
-//         line-height: 1.71;
-//         // letter-spacing: 0.03em;
-//     }
+            transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+        }
+    }
+}
 
-//     a {
-//         color: $accent-color;
-//     }
+.form-field:focus-within>.icon-form {
+    fill: $accent-color;
+}
 
-//     .checkbox {
-//         /* -webkit-appearance: none;
-//   -moz-appearance: none;
-//   appearance: none;
-//   position: absolute; */
+.form-field:focus-within>input,
+.form-field:focus-within>textarea {
+    border-color: $accent-color;
 
-//         position: absolute;
-//         width: 1px;
-//         height: 1px;
-//         margin: -1px;
-//         border: 0;
-//         padding: 0;
-//         clip: rect(0 0 0 0);
-//         overflow: hidden;
-//     }
+}
 
-//     .icon {
-//         display: inline-block;
-//         width: 15px;
-//         height: 15px;
-//         margin-right: 8px;
+.form-field:focus-within>.form-label,
+.form-input:not(:placeholder-shown)+.form-label {
+    transform: translate(-26px, -36px);
 
-//         border: 2px solid #212121;
-//         border-radius: 4px;
+    font-size: 12px;
+    color: $accent-color;
+}
 
-//         /* transition: transform 250ms linear; */
-//     }
+.form-field:focus-within>.form-label-comment,
+textarea:not(:placeholder-shown)+.form-label-comment {
+    transform: translateY(-28px);
 
-//     .checkbox:checked+.icon {
+    font-size: 12px;
+    color: $accent-color;
+}
 
-//         border-color: transparent;
-//         background-color: $accent-color;
-//         background-image: url('../images/icon-check.svg');
-//         background-size: contain;
-//         background-origin: border-box;
-//     }
-// }
+.field {
+    display: flex;
+    align-items: center;
+}
+
+.form-license {
+
+    display: flex;
+    justify-content: center;
+    margin-bottom: 30px;
+
+    label {
+        font-size: 14px;
+        line-height: 1.71;
+        // letter-spacing: 0.03em;
+    }
+
+    a {
+        color: $accent-color;
+    }
+
+    .checkbox {
+        /* -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  position: absolute; */
+
+        position: absolute;
+        width: 1px;
+        height: 1px;
+        margin: -1px;
+        border: 0;
+        padding: 0;
+        clip: rect(0 0 0 0);
+        overflow: hidden;
+    }
+
+    .icon {
+        display: inline-block;
+        width: 15px;
+        height: 15px;
+        margin-right: 8px;
+
+        border: 2px solid #212121;
+        border-radius: 4px;
+
+        /* transition: transform 250ms linear; */
+    }
+
+    .checkbox:checked+.icon {
+
+        border-color: transparent;
+        background-color: $accent-color;
+        background-image: url('../images/icon-check.svg');
+        background-size: contain;
+        background-origin: border-box;
+    }
+}
