@@ -1,16 +1,15 @@
 .logo {
     display: block;
-    padding-top: 24px;
-    padding-bottom: 25px;
-    margin-right: 85px;
+    padding-top: 16px;
+    padding-bottom: 16px;
 
     color: $primary-black-color;
     text-decoration: none;
 
     font-family: $logo-font;
     font-weight: 700;
-    font-size: 26px;
-    line-height: 1.19;
+    font-size: 24px;
+    line-height: 1.17;
 
     .accent {
         color: $accent-color;
@@ -18,19 +17,19 @@
 
 }
 
-.logo-footer {
-    padding-top: 0;
-    padding-bottom: 0;
-    margin-bottom: 10px;
+// .logo-footer {
+//     padding-top: 0;
+//     padding-bottom: 0;
+//     margin-bottom: 10px;
 
-    color: $primary-white-color;
+//     color: $primary-white-color;
 
-    font-family: Raleway;
-    font-weight: 700;
-    font-size: 22px;
-    line-height: 1.18;
+//     font-family: Raleway;
+//     font-weight: 700;
+//     font-size: 22px;
+//     line-height: 1.18;
 
-    .accent {
-        color: $accent-color;
-    }
-}
+//     .accent {
+//         color: $accent-color;
+//     }
+// }

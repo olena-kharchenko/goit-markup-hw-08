@@ -1,93 +1,105 @@
 // Общие стили
 
 
-body {
-    background-color: $primary-white-color;
-    color: $primary-text-color;
+// body {
+//     background-color: $primary-white-color;
+//     color: $primary-text-color;
 
-    font-family: $main-font;
-    letter-spacing: 0.03em;
-}
+//     font-family: $main-font;
+//     letter-spacing: 0.03em;
+// }
 
-img {
-    display: block;
-    max-width: 100%;
-    height: auto;
-}
+// img {
+//     display: block;
+//     max-width: 100%;
+//     height: auto;
+// }
 
 .container {
     margin-left: auto;
     margin-right: auto;
-    width: 1200px;
     padding-left: 15px;
     padding-right: 15px;
     /* outline: 2px solid goldenrod; */
-}
 
-h1,
-h2,
-h3,
-p {
-    margin-top: 0;
-    margin-bottom: 0;
-}
 
-button {
-    border: 0;
-    font-family: inherit;
-
-    cursor: pointer;
-}
-
-.list {
-    padding: 0;
-    margin: 0;
-    list-style: none;
-}
-
-.visually-hidden {
-    position: absolute;
-    width: 1px;
-    height: 1px;
-    margin: -1px;
-    border: 0;
-    padding: 0;
-    clip: rect(0 0 0 0);
-    overflow: hidden;
-}
-
-.section {
-    padding-top: 94px;
-    padding-bottom: 94px;
-
-    .title {
-        color: $title-text-color;
+    @media screen and (min-width: 480px) {
+        width: 480px;
     }
 
-    &.underline {
-        position: relative;
+    @media screen and (min-width: 768px) {
+        width: 768px;
+    }
 
-        &::after {
-            content: '';
-            position: absolute;
-            bottom: 0;
-            left: 0;
-            width: 1170px;
-            height: 1px;
-            background-color: #ececec;
-            right: 0;
-            margin: 0 auto;
-        }
+    @media screen and (min-width: 1200px) {
+        width: 1200px;
     }
 }
 
-/* Заголовки */
-.title.big {
-    font-weight: 700;
-    font-size: 36px;
-    line-height: 1.17;
-    text-align: center;
-    letter-spacing: 0.03em;
+// h1,
+// h2,
+// h3,
+// p {
+//     margin-top: 0;
+//     margin-bottom: 0;
+// }
 
-    margin-bottom: 50px;
-}
+// button {
+//     border: 0;
+//     font-family: inherit;
+
+//     cursor: pointer;
+// }
+
+// .list {
+//     padding: 0;
+//     margin: 0;
+//     list-style: none;
+// }
+
+// .visually-hidden {
+//     position: absolute;
+//     width: 1px;
+//     height: 1px;
+//     margin: -1px;
+//     border: 0;
+//     padding: 0;
+//     clip: rect(0 0 0 0);
+//     overflow: hidden;
+// }
+
+// .section {
+//     padding-top: 94px;
+//     padding-bottom: 94px;
+
+//     .title {
+//         color: $title-text-color;
+//     }
+
+//     &.underline {
+//         position: relative;
+
+//         &::after {
+//             content: '';
+//             position: absolute;
+//             bottom: 0;
+//             left: 0;
+//             width: 1170px;
+//             height: 1px;
+//             background-color: #ececec;
+//             right: 0;
+//             margin: 0 auto;
+//         }
+//     }
+// }
+
+// /* Заголовки */
+// .title.big {
+//     font-weight: 700;
+//     font-size: 36px;
+//     line-height: 1.17;
+//     text-align: center;
+//     letter-spacing: 0.03em;
+
+//     margin-bottom: 50px;
+// }
