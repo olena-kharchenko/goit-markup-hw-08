@@ -1,5 +1,43 @@
 // /* Раздел Преимущества */
 
+.flex-features {
+
+    .item {
+        &:not(:last-child) {
+            margin-bottom: 30px;
+        }
+    }
+}
+
+.features-icon {
+    display: block;
+    text-align: center;
+
+    padding: 25px 0 25px 0;
+    width: 100%;
+    background-color: $bg-btn-fltr-color;
+    border-radius: 4px;
+
+    margin-bottom: 30px;
+}
+
+.title.features {
+    margin-bottom: 10px;
+    text-align: center;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    text-transform: uppercase;
+    color: $title-text-color;
+}
+
+.text {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.71;
+    color: $primary-text-color;
+}
+
 // .flex-features {
 //     display: flex;
 
@@ -10,28 +48,4 @@
 //             margin-right: 30px;
 //         }
 //     }
-// }
-
-// .features-icon {
-//     display: block;
-//     padding: 25px 100px;
-//     background-color: $bg-btn-fltr-color;
-//     border-radius: 4px;
-
-//     margin-bottom: 30px;
-// }
-
-// .title.features {
-//     margin-bottom: 10px;
-
-//     font-weight: 700;
-//     font-size: 14px;
-//     line-height: 1.14;
-//     text-transform: uppercase;
-// }
-
-// .text {
-//     font-weight: 400;
-//     font-size: 14px;
-//     line-height: 1.71;
 // }
