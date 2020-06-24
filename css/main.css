@@ -905,7 +905,7 @@ textarea:not(:placeholder-shown) + .form-label-comment {
 }
 
 .card-content {
-  width: 450px;
+  width: 100%;
   padding: 20px 24px;
   background: #ffffff;
   /* Рамка не везде а только с трёх сторон */
