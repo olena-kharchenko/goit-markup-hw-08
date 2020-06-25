@@ -387,6 +387,13 @@ nav {
   margin-bottom: 30px;
 }
 
+@media screen and (min-width: 1200px) {
+  .hero-title {
+    font-size: 44px;
+    line-height: 1.36;
+  }
+}
+
 .hero .button {
   display: inline-block;
   border-radius: 4px;
@@ -659,6 +666,12 @@ textarea:not(:placeholder-shown) + .form-label-comment {
   }
 }
 
+@media screen and (min-width: 1200px) {
+  .flex-features .item {
+    width: calc((100% - 8*15px) / 4);
+  }
+}
+
 .features-icon {
   display: block;
   text-align: center;
@@ -686,6 +699,49 @@ textarea:not(:placeholder-shown) + .form-label-comment {
 
 .specialization {
   display: none;
+}
+
+@media screen and (min-width: 1200px) {
+  .specialization {
+    display: block;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .flex-apps {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin: -15px;
+  }
+  .flex-apps .item {
+    width: calc((100% - 6*15px) / 3);
+    margin: 15px;
+  }
+}
+
+.img-wrap {
+  position: relative;
+}
+
+.img-wrap h3 {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+}
+
+.subtitle {
+  padding-top: 27px;
+  padding-bottom: 27px;
+  color: #ffffff;
+  background-color: rgba(47, 48, 58, 0.8);
+  border-radius: 0px 0px 4px 4px;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  text-align: center;
+  text-transform: uppercase;
 }
 
 /* фон Нашей команды */
@@ -728,6 +784,14 @@ textarea:not(:placeholder-shown) + .form-label-comment {
 @media screen and (min-width: 768px) {
   .flex-command .item {
     width: calc((100% - 4*15px) / 2);
+    height: auto;
+    margin: 15px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .flex-command .item {
+    width: calc((100% - 8*15px) / 4);
     height: auto;
     margin: 15px;
   }
@@ -816,6 +880,12 @@ textarea:not(:placeholder-shown) + .form-label-comment {
   }
 }
 
+@media screen and (min-width: 768px) {
+  .flex-company .item {
+    width: calc((100% - 12*15px) / 6);
+  }
+}
+
 .company-icon {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -842,7 +912,6 @@ textarea:not(:placeholder-shown) + .form-label-comment {
 .page-footer {
   padding-top: 60px;
   padding-bottom: 60px;
-  text-align: center;
   background-color: #2f303a;
 }
 
@@ -855,6 +924,12 @@ textarea:not(:placeholder-shown) + .form-label-comment {
 
 .page-footer .icon-social:hover, .page-footer .icon-social:focus {
   background-color: #2196f3;
+}
+
+@media screen and (max-width: 1199px) {
+  .page-footer {
+    text-align: center;
+  }
 }
 
 .address-nav {
@@ -967,6 +1042,12 @@ textarea:not(:placeholder-shown) + .form-label-comment {
   }
 }
 
+@media screen and (min-width: 1200px) {
+  .form-field input {
+    width: 358px;
+  }
+}
+
 .form-field input::-webkit-input-placeholder {
   font-size: 16px;
   color: rgba(255, 255, 255, 0.6);
@@ -998,6 +1079,42 @@ textarea:not(:placeholder-shown) + .form-label-comment {
     display: flex;
     -ms-flex-pack: distribute;
         justify-content: space-around;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .flex-footer {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: baseline;
+        -ms-flex-align: baseline;
+            align-items: baseline;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    padding-bottom: 28px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .flex-footer-address {
+    text-align: left;
+    margin-right: 70px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .flex-email {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .button.subscription {
+    margin-left: 12px;
   }
 }
 
@@ -1165,8 +1282,6 @@ textarea:not(:placeholder-shown) + .form-label-comment {
   /* Рамка не везде а только с трёх сторон */
   border: 1px solid #eeeeee;
   border-top: 0;
-  -webkit-box-flex: 1;
-      -ms-flex-positive: 1;
-          flex-grow: 1;
+  text-overflow: ellipsis;
 }
 /*# sourceMappingURL=main.css.map */

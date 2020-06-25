@@ -54,6 +54,12 @@
             height: auto;
             margin: 15px;
         }
+
+        @media screen and (min-width: 768px) {
+            width: calc((100% - 8*15px) / 4);
+            height: auto;
+            margin: 15px;
+        }
     }
 
     @media screen and (min-width: 768px) {

@@ -86,6 +86,7 @@
     font-size: 18px;
     line-height: 2;
     letter-spacing: 0.06em;
+
 }
 
 .caption {
@@ -173,7 +174,9 @@
     /* Рамка не везде а только с трёх сторон */
     border: 1px solid #eeeeee;
     border-top: 0;
-    flex-grow: 1;
+    // flex-grow: 1;
+
+    text-overflow: ellipsis;
 }
 
 
