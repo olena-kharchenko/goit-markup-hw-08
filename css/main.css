@@ -789,7 +789,7 @@ textarea:not(:placeholder-shown) + .form-label-comment {
   }
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 1200px) {
   .flex-command .item {
     width: calc((100% - 8*15px) / 4);
     height: auto;
@@ -880,7 +880,7 @@ textarea:not(:placeholder-shown) + .form-label-comment {
   }
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 1200px) {
   .flex-company .item {
     width: calc((100% - 12*15px) / 6);
   }
