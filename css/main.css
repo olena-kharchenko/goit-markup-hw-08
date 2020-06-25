@@ -1180,6 +1180,13 @@ textarea:not(:placeholder-shown) + .form-label-comment {
   }
 }
 
+@media screen and (min-width: 1200px) {
+  .flex-examples .item {
+    width: calc((100% - 6*15px) / 3);
+    margin: 15px;
+  }
+}
+
 @media screen and (min-width: 768px) {
   .flex-examples {
     display: -webkit-box;
@@ -1197,7 +1204,6 @@ textarea:not(:placeholder-shown) + .form-label-comment {
   font-weight: 700;
   font-size: 18px;
   line-height: 2;
-  letter-spacing: 0.06em;
 }
 
 .caption {
