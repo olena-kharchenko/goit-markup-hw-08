@@ -62,6 +62,17 @@
                 0px 1px 1px rgba(0, 0, 0, 0.12);
         }
 
+        @media screen and (min-width: 768px) {
+            width: calc((100% - 4*15px) / 2);
+            margin: 15px;
+
+        }
+    }
+
+    @media screen and (min-width: 768px) {
+        display: flex;
+        flex-wrap: wrap;
+        margin: -15px;
     }
 }
 
@@ -109,6 +120,8 @@
         transform: translateY(0);
         opacity: 1;
     }
+
+
 }
 
 .card-thumb {
@@ -160,6 +173,7 @@
     /* Рамка не везде а только с трёх сторон */
     border: 1px solid #eeeeee;
     border-top: 0;
+    flex-grow: 1;
 }
 
 

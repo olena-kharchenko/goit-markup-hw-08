@@ -46,6 +46,12 @@
 
         color: $title-text-color;
     }
+
+    @media screen and (min-width: 470px) {
+        width: 450px;
+    }
+
+
 }
 
 
@@ -217,7 +223,7 @@ textarea:not(:placeholder-shown)+.form-label-comment {
 
     .icon {
         display: inline-block;
-        width: 15px;
+        width: 17px;
         height: 15px;
         margin-right: 8px;
 
