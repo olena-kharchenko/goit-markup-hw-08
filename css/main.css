@@ -270,7 +270,13 @@ nav {
   width: 100%;
 }
 
-@media screen and (mzx-width: 767px) {
+@media screen and (min-width: 1200px) {
+  nav {
+    width: 465px;
+  }
+}
+
+@media screen and (max-width: 767px) {
   .site-nav {
     margin-bottom: 18px;
     padding-left: 10%;
@@ -343,6 +349,12 @@ nav {
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
+@media screen and (min-width: 1200px) {
+  .mail-nav .link:not(:last-child) {
+    margin-right: 30px;
+  }
+}
+
 .mail-nav .link:hover, .mail-nav .link:focus {
   color: #2196f3;
   cursor: pointer;
@@ -363,6 +375,21 @@ nav {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .mail-nav {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .mail-nav:not(:last-child) {
+    margin-right: 30px;
   }
 }
 
@@ -940,11 +967,16 @@ textarea:not(:placeholder-shown) + .form-label-comment {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  margin-bottom: 60px;
   font-style: normal;
   font-weight: 400;
   font-size: 14px;
   line-height: 1.71;
+}
+
+@media screen and (max-width: 767px) {
+  .address-nav {
+    margin-bottom: 60px;
+  }
 }
 
 .address-nav .link {
@@ -1093,7 +1125,6 @@ textarea:not(:placeholder-shown) + .form-label-comment {
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
-    padding-bottom: 28px;
   }
 }
 

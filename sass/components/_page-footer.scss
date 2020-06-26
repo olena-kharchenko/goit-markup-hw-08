@@ -28,11 +28,16 @@
 .address-nav {
     display: flex;
     flex-direction: column;
-    margin-bottom: 60px;
+
     font-style: normal;
     font-weight: 400;
     font-size: 14px;
     line-height: 1.71;
+
+
+    @media screen and (max-width: 767px) {
+        margin-bottom: 60px;
+    }
 
     .link {
         color: $primary-white-color;
@@ -166,7 +171,7 @@
         display: flex;
         align-items: baseline;
         justify-content: space-between;
-        padding-bottom: 28px;
+        // padding-bottom: 28px;
     }
 }
 
@@ -191,6 +196,7 @@
         margin-left: 12px;
     }
 }
+
 
 // .page-footer {
 //     padding-top: 48px;
