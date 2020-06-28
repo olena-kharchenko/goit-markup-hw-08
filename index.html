@@ -132,23 +132,48 @@
         <ul class="list flex-apps">
           <li class="item">
             <div class="img-wrap">
-              <a href=""><img src="./images/desktop-applications.jpg" alt="Десктопные
-                  приложения" width="370" height="294" class="img-responsive" /></a>
+              <a href="">
+
+                <img srcset="
+            ./images/desktop/desktop-applications370.jpg 1x,
+            ./images/desktop/desktop-applications740.jpg 2x,
+     
+          " src="./images/desktop/desktop-applications370.jpg" alt="Десктопные приложения" width="370" />
+                <!-- <img src="./images/desktop-applications.jpg" alt="Десктопные
+                  приложения" width="370" height="294" class="img-responsive" /> -->
+
+              </a>
 
               <h3 class="subtitle">Десктопные приложения</h3>
             </div>
           </li>
           <li class="item">
             <div class="img-wrap">
-              <a href=""><img src="./images/mobile-applications.jpg" alt="Мобильные приложения" width="370" height="294"
-                  class="img-responsive" /></a>
+              <a href="">
+                <img srcset="
+                            ./images/desktop/mobile-applications370.jpg 1x,
+                            ./images/desktop/mobile-applications740.jpg 2x,
+                     
+                          " src="./images/desktop/desktop-applications370.jpg" alt="Десктопные приложения"
+                  width="370" />
+                <!-- <img src="./images/mobile-applications.jpg" alt="Мобильные приложения" width="370" height="294"
+                  class="img-responsive" /> -->
+
+              </a>
               <h3 class="subtitle">Мобильные приложения</h3>
             </div>
           </li>
           <li class="item">
             <div class="img-wrap">
-              <a href=""><img src="./images/desiner-solutions.jpg" alt="Дизайнерские решения" width="370" height="294"
-                  class="img-responsive" /></a>
+              <a href="">
+
+                <img srcset="
+               ./images/desktop/desiner-solutions370.jpg 1x,
+               ./images/desktop/desiner-solutions740.jpg 2x,
+ " src="./images/desktop/desktop-applications370.jpg" alt="Десктопные приложения" width="370" />
+                <!-- <img src="./images/desiner-solutions.jpg" alt="Дизайнерские решения" width="370" height="294"
+                  class="img-responsive" /> -->
+              </a>
               <h3 class="subtitle">Дизайнерские решения</h3>
             </div>
           </li>
@@ -163,7 +188,16 @@
           <!-- Джон Смит -->
 
           <li class="item">
-            <img class="photo" src="./images/john-smith-photo.jpg" alt="Джон Смит" width="270" height="260" />
+            <picture>
+              <source srcset="./images/mobile/kucherenko450.jpg 1x, ./images/mobile/kucherenko900.jpg 2x"
+                media="(max-width: 767px)" type="image/jpg">
+              <source srcset="./images/tablet/kucherenko354.jpg 1x, ./images/tablet/kucherenko708.jpg 2x"
+                media="(max-width: 1199px)" type="image/jpg">
+              <source srcset="./images/desktop/kucherenko270.jpg 1x, ./images/desktop/kucherenko540.jpg 2x"
+                media="(min-width: 1200px)" type="image/jpg">
+              <img src="./images/mobile/kucherenko450.jpg " alt="фото Николая Кучеренко">
+            </picture>
+            <!-- <img alt="Николай Кучеренко фото" src="./images/kucherenko450.jpg" srcset="./images/kucherenko900.jpg 2x" /> -->
             <div class="card-command">
               <h3 class="title medium">Николай Кучеренко</h3>
               <p class="text-small">Product Designer</p>
@@ -194,7 +228,18 @@
 
           <!-- Марта Стюарт -->
           <li class="item">
-            <img class="photo" src="./images/marta-stewart-photo.jpg" alt="Марта Стюарт" width="270" height="260" />
+
+            <picture>
+              <source srcset="./images/mobile/ivanova450.jpg 1x, ./images/mobile/ivanova900.jpg 2x"
+                media="(max-width: 767px)" type="image/jpg">
+              <source srcset="./images/tablet/ivanova354.jpg 1x, ./images/tablet/ivanova708.jpg 2x"
+                media="(max-width: 1199px)" type="image/jpg">
+              <source srcset="./images/desktop/ivanova270.jpg 1x, ./images/desktop/ivanova540.jpg 2x"
+                media="(min-width: 1200px)" type="image/jpg">
+              <img src="./images/mobile/ivanova450.jpg " alt="фото Ольги Ивановой">
+            </picture>
+            <!-- <img alt="Ольга Иванова фото" src="./images/ivanova450.jpg" srcset="./images/ivanova900.jpg 2x" /> -->
+            <!-- <img class="photo" src="./images/marta-stewart-photo.jpg" alt="Марта Стюарт" width="270" height="260" /> -->
             <div class="card-command">
               <h3 class="title medium">Ольга Иванова</h3>
               <p class="text-small">Frontend Developer</p>
@@ -224,7 +269,19 @@
           </li>
           <!-- Роберт Якис -->
           <li class="item">
-            <img class="photo" src="./images/robert-jakis-photo.jpg" alt="Роберт Якис" width="270" height="260" />
+
+            <picture>
+              <source srcset="./images/mobile/shevchenko450.jpg 1x, ./images/mobile/shevchenko900.jpg 2x"
+                media="(max-width: 767px)" type="image/jpg">
+              <source srcset="./images/tablet/shevchenko354.jpg 1x, ./images/tablet/shevchenko708.jpg 2x"
+                media="(max-width: 1199px)" type="image/jpg">
+              <source srcset="./images/desktop/shevchenko270.jpg 1x, ./images/desktop/shevchenko540.jpg 2x"
+                media="(min-width: 1200px)" type="image/jpg">
+              <img src="./images/mobile/shevchenko450.jpg " alt="фото Андрея Шевченко">
+            </picture>
+            <!-- <img alt="Андрей Шевченко фото" src="./images/shevchenko450.jpg" srcset="./images/shevchenko900.jpg 2x" /> -->
+
+            <!-- <img class="photo" src="./images/robert-jakis-photo.jpg" alt="Роберт Якис" width="270" height="260" /> -->
             <div class="card-command">
               <h3 class="title medium">Андрей Шевченко</h3>
               <p class="text-small">Marketing</p>
@@ -254,7 +311,17 @@
           </li>
           <!-- Мартин Доу -->
           <li class="item">
-            <img class="photo" src="./images/martin-doe-photo.jpg" alt="Мартин Доу" width="270" height="260" />
+            <picture>
+              <source srcset="./images/mobile/nikolaev450.jpg 1x, ./images/mobile/nikolaev900.jpg 2x"
+                media="(max-width: 767px)" type="image/jpg">
+              <source srcset="./images/tablet/nikolaev354.jpg 1x, ./images/tablet/nikolaev708.jpg 2x"
+                media="(max-width: 1199px)" type="image/jpg">
+              <source srcset="./images/desktop/nikolaev270.jpg 1x, ./images/desktop/nikolaev540.jpg 2x"
+                media="(min-width: 1200px)" type="image/jpg">
+              <img src="./images/mobile/nikolaev450.jpg " alt="фото Андрея Шевченко">
+            </picture>
+            <!-- <img alt="Иван Николаев фото" src="./images/nikolaev450.jpg" srcset="./images/nikolaev900.jpg 2x" /> -->
+            <!-- <img class="photo" src="./images/martin-doe-photo.jpg" alt="Мартин Доу" width="270" height="260" /> -->
             <div class="card-command">
               <h3 class="title medium">Иван Николаев</h3>
               <p class="text-small">UI Designer</p>
