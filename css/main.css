@@ -115,11 +115,18 @@ button {
   font-family: "Raleway", sans-serif;
   font-weight: 700;
   font-size: 24px;
-  line-height: 1.17;
+  line-height: 1.16;
 }
 
 .logo .accent {
   color: #2196f3;
+}
+
+@media screen and (min-width: 1200px) {
+  .logo {
+    font-size: 26px;
+    line-height: 1.19;
+  }
 }
 
 .logo-footer {
@@ -129,12 +136,19 @@ button {
   color: #ffffff;
   font-family: Raleway;
   font-weight: 700;
-  font-size: 22px;
-  line-height: 1.18;
+  font-size: 24px;
+  line-height: 1.16;
 }
 
 .logo-footer .accent {
   color: #2196f3;
+}
+
+@media screen and (min-width: 1200px) {
+  .logo-footer {
+    font-size: 26px;
+    line-height: 1.19;
+  }
 }
 
 .header-studio,
@@ -1038,12 +1052,6 @@ textarea:not(:placeholder-shown) + .form-label-comment {
   line-height: 1.71;
 }
 
-@media screen and (max-width: 767px) {
-  .address-nav {
-    margin-bottom: 60px;
-  }
-}
-
 .address-nav .link {
   color: #ffffff;
   text-decoration: none;
@@ -1072,7 +1080,6 @@ textarea:not(:placeholder-shown) + .form-label-comment {
           justify-content: space-between;
   margin-left: auto;
   margin-right: auto;
-  margin-bottom: 60px;
   width: 206px;
 }
 
@@ -1200,11 +1207,21 @@ textarea:not(:placeholder-shown) + .form-label-comment {
   }
 }
 
+@media screen and (max-width: 767px) {
+  .flex-footer-address {
+    margin-bottom: 60px;
+  }
+}
+
 @media screen and (min-width: 1200px) {
   .flex-footer-address {
     text-align: left;
     margin-right: 70px;
   }
+}
+
+.social.slogan {
+  margin-bottom: 60px;
 }
 
 @media screen and (min-width: 1200px) {
@@ -1227,10 +1244,9 @@ textarea:not(:placeholder-shown) + .form-label-comment {
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
+  -ms-flex-line-pack: start;
+      align-content: flex-start;
   margin-bottom: 40px;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
 }
 
 .btn-filter {

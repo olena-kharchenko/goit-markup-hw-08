@@ -35,9 +35,6 @@
     line-height: 1.71;
 
 
-    @media screen and (max-width: 767px) {
-        margin-bottom: 60px;
-    }
 
     .link {
         color: $primary-white-color;
@@ -64,7 +61,7 @@
     justify-content: space-between;
     margin-left: auto;
     margin-right: auto;
-    margin-bottom: 60px;
+
     width: 206px;
 }
 
@@ -181,13 +178,19 @@
 }
 
 .flex-footer-address {
+    @media screen and (max-width: 767px) {
+        margin-bottom: 60px;
+    }
+
     @media screen and (min-width: 1200px) {
         text-align: left;
         margin-right: 70px;
     }
 }
 
-
+.social.slogan {
+    margin-bottom: 60px;
+}
 
 .flex-email {
     @media screen and (min-width: 1200px) {
